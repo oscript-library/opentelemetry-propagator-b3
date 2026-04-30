@@ -41,4 +41,4 @@ opm install opentelemetry-propagator-b3
 
 ## Лицензия
 
-Apache 2.0
+[MIT](LICENSE.md) © 2026 Nikita Fedkin
