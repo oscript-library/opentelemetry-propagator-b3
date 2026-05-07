@@ -37,7 +37,7 @@ opm install opentelemetry-propagator-b3
 
 ## Совместимость
 
-Требуется OpenTelemetry SDK для OneScript версии `>= 0.1.0`.
+Требуется OpenTelemetry SDK для OneScript версии `>= 1.0.0`.
 
 ## Лицензия
 

@@ -4,7 +4,7 @@
 //
 
 Описание.Имя("opentelemetry-propagator-b3")
-        .Версия("0.1.0")
+        .Версия("1.0.0")
         .Автор("Nikita Fedkin")
         .АдресАвтора("nixel2007@gmail.com")
         .АдресРепозитория("https://github.com/nixel2007/opentelemetry-propagator-b3")
@@ -15,7 +15,7 @@
         .ВключитьФайл("lib.config")
         .ВключитьФайл("README.md")
 
-        .ЗависитОт("opentelemetry", "0.1.0")
+        .ЗависитОт("opentelemetry", "1.0.0")
 
         .РазработкаЗависитОт("oneunit", "0.3.3")
         .РазработкаЗависитОт("asserts", "1.5.0")
