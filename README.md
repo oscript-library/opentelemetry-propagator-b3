@@ -16,7 +16,7 @@ B3 (Zipkin) пропагатор для [OpenTelemetry SDK](https://github.com/n
 opm install opentelemetry-propagator-b3
 ```
 
-## Использование
+## Быстрый старт
 
 ```bsl
 #Использовать opentelemetry
@@ -28,22 +28,31 @@ opm install opentelemetry-propagator-b3
 // Multi-header формат: X-B3-TraceId, X-B3-SpanId, X-B3-Sampled
 Пропагатор = Новый ОтелB3Пропагатор(ОтелФорматB3.Мульти());
 
+// Внедрить контекст в исходящий запрос
 Носитель = Новый Соответствие();
 Пропагатор.Внедрить(ОтелКонтекст.Текущий(), Носитель);
 
+// Извлечь контекст из входящего запроса
 КонтекстВходящий = Пропагатор.Извлечь(Новый Соответствие(), ВходящиеЗаголовки);
 ```
 
 ## Поддерживаемые форматы
 
 | Формат | Заголовки |
-|---|---|
+|--------|-----------|
 | `single` (по умолчанию) | `b3: {traceId}-{spanId}-{sampled}-{parentSpanId}` |
 | `multi` | `X-B3-TraceId`, `X-B3-SpanId`, `X-B3-Sampled`, `X-B3-Flags` |
 
-## Совместимость
+При извлечении контекста оба формата поддерживаются одновременно: `single-header (b3)` имеет приоритет.
 
-Требуется OpenTelemetry SDK для OneScript версии `>= 1.0.0`.
+## Документация
+
+Полная документация: https://nixel2007.github.io/opentelemetry-propagator-b3/
+
+## Требования
+
+- OneScript >= 1.0.0
+- OpenTelemetry SDK для OneScript >= 1.0.0
 
 ## Лицензия
 
