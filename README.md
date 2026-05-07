@@ -1,5 +1,11 @@
 # opentelemetry-propagator-b3
 
+[![Quality Gate](https://sonar.openbsl.ru/api/project_badges/measure?project=opentelemetry-propagator-b3&metric=alert_status)](https://sonar.openbsl.ru/dashboard?id=opentelemetry-propagator-b3)
+[![Coverage](https://sonar.openbsl.ru/api/project_badges/measure?project=opentelemetry-propagator-b3&metric=coverage)](https://sonar.openbsl.ru/component_measures?id=opentelemetry-propagator-b3&metric=coverage)
+[![Bugs](https://sonar.openbsl.ru/api/project_badges/measure?project=opentelemetry-propagator-b3&metric=bugs)](https://sonar.openbsl.ru/project/issues?id=opentelemetry-propagator-b3&resolved=false&types=BUG)
+[![Code Smells](https://sonar.openbsl.ru/api/project_badges/measure?project=opentelemetry-propagator-b3&metric=code_smells)](https://sonar.openbsl.ru/project/issues?id=opentelemetry-propagator-b3&resolved=false&types=CODE_SMELL)
+[![Telegram](https://img.shields.io/badge/Telegram-чат-blue?logo=telegram)](https://t.me/autumn_winow)
+
 B3 (Zipkin) пропагатор для [OpenTelemetry SDK](https://github.com/nixel2007/opentelemetry) на OneScript.
 
 Согласно [спецификации OpenTelemetry Propagators Distribution](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/context/api-propagators.md#propagators-distribution), официальный список пропагаторов **MUST be distributed as separate, optional packages**. Этот пакет — отдельная поставка B3-пропагатора, чтобы основной SDK не нёс зависимостей на не-W3C форматы.
