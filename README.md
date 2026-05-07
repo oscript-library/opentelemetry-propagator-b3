@@ -47,7 +47,8 @@ opm install opentelemetry-propagator-b3
 
 ## Документация
 
-Полная документация: https://nixel2007.github.io/opentelemetry-propagator-b3/
+- [Руководство пользователя](https://autumn-library.github.io/opentelemetry-propagator-b3/)
+- [Справочник API](https://autumn-library.github.io/api/opentelemetry-propagator-b3/)
 
 ## Требования
 
